@@ -15,8 +15,10 @@
     class HyperLink extends React.Component {
         render() {
             return (
-                <a href="#C4">About</a>
-                <a href="#C4">Portfolio</a>
+                <div>
+                    <a href="#C4">About</a>
+                    <a href="#C4">Portfolio</a>
+                </div>
             );
         }
     }
@@ -24,8 +26,10 @@
     class BookMark extends React.Component {
         render() {
             return (
+                <div>
                     <h2 id="C4">About</h2>
                     <h2 id="C4">Portfolio</h2>
+                </div>
             );
         }
     }
@@ -34,13 +38,13 @@
     class App extends React.Component {
         render() {
             return (
+                <div>
                     < HyperLink />
                     < BookMark />
+                </div>
             );
         }
     }
-
-<h2 id="C4">About</h2>
 
       ReactDOM.render(
         <App />,
