@@ -11,8 +11,39 @@
   <body>
     <div id="root"></div>
     <script type="text/babel">
+
+    class HyperLink extends React.Component {
+        render() {
+            return (
+                <a href="#C4">About</a>
+                <a href="#C4">Portfolio</a>
+            );
+        }
+    }
+
+    class BookMark extends React.Component {
+        render() {
+            return (
+                    <h2 id="C4">About</h2>
+                    <h2 id="C4">Portfolio</h2>
+            );
+        }
+    }
+
+    
+    class App extends React.Component {
+        render() {
+            return (
+                    < HyperLink />
+                    < BookMark />
+            );
+        }
+    }
+
+<h2 id="C4">About</h2>
+
       ReactDOM.render(
-        <h1>Hello, world!</h1>,
+        <App />,
         document.getElementById('root')
       );
     </script>
